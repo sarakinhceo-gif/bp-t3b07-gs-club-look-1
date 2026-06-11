@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강서 클럽 룩북 | 블로그</title>
+    <meta name="description" content="강서 클럽 룩북의 정수. 거리의 원초적 에너지를 담은 룩북, 클럽 문화를 뒤집는 대담한 스타일. 010-6279-0862로 바로 합류하세요.">
+    <meta name="keywords" content="강서 클럽, 강서 클럽 룩북, 클럽 룩북, 스트릿 브루탈리즘, 강서구 클럽, bro 스타일, 클럽 패션">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b07-gs-club-look-1.vercel.app/">
+    <meta property="og:title" content="강서 클럽 룩북 | T3B07">
+    <meta property="og:description" content="강서 클럽 룩북의 정수. 거리의 원초적 에너지를 담은 룩북, 클럽 문화를 뒤집는 대담한 스타일. 010-6279-0862로 바로 합류하세요.">
+    <style>
+        /* RESET & BASE - brutalist raw */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Arial Black', 'Impact', 'Helvetica Neue', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.4;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        /* typography */
+        h1, h2, h3, h4 {
+            font-weight: 900;
+            color: #f5f5f5;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 0.9;
+            margin-bottom: 1rem;
+            text-shadow: 4px 4px 0 #ff3300;
+        }
+        h2 {
+            font-size: 2.5rem;
+            border-left: 6px solid #ff3300;
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0 0.8rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            color: #b0b0b0;
+        }
+        a {
+            color: #ff3300;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover {
+            border-bottom-color: #ff3300;
+        }
+        /* layout containers */
+        header, nav, main, section, footer {
+            width: 100%;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .full-bleed {
+            width: 100%;
+            margin: 0;
+            padding: 2rem 0;
+            border-top: 3px solid #ff3300;
+            border-bottom: 3px solid #ff3300;
+            background-color: #222;
+        }
+        /* navigation */
+        nav {
+            background-color: #111;
+            padding: 1rem 0;
+            border-bottom: 3px solid #ff3300;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-bottom: none;
+            padding: 0.3rem 0;
+        }
+        .nav-links a:hover {
+            border-bottom: 3px solid #ff3300;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 4px;
+            background-color: #ff3300;
+            display: block;
+        }
+        .tel-link {
+            display: inline-block;
+            background-color: #ff3300;
+            color: #111;
+            padding: 0.5rem 1.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: none;
+            transition: background-color 0.2s;
+        }
+        .tel-link:hover {
+            background-color: #cc2900;
+            border-bottom: none;
+        }
+        /* blog specific */
+        .blog-post {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 2px solid #333;
+        }
+        .blog-post .meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: none;
+        }
+        .blog-post blockquote {
+            border-left: 6px solid #ff3300;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #ccc;
+            font-size: 1.3rem;
+        }
+        .blog-post .highlight {
+            background-color: #2a2a2a;
+            padding: 1rem;
+            border: 2px dashed #ff3300;
+            margin: 1.5rem 0;
+        }
+        footer {
+            background-color: #111;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 3px solid #ff3300;
+            margin-top: 3rem;
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        /* responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #111;
+                padding: 1rem;
+                border-bottom: 3px solid #ff3300;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .tel-link {
+                font-size: 1rem;
+                padding: 0.4rem 1rem;
+            }
+            .blog-post {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/lookbook">룩북</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/about">어바웃</a></li>
+            </ul>
+            <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>블로그</h1>
+            <p style="font-size: 1.4rem; margin-bottom: 2rem;">거리의 진실, 클럽의 법칙. 우리만의 언어로 쓴다.</p>
+
+            <article class="blog-post">
+                <div class="meta">2025.03.15 | 강서 클럽 룩북 | T3B07</div>
+                <h2 style="border-left: none; padding-left: 0; margin-top: 0;">왜 스트릿 브루탈리즘이 클럽을 지배하는가</h2>
+                
+                <p>강서 클럽 룩북의 세계에 온 걸 환영한다. 여긴 가짜들 설 자리가 없다. 네가 입는 옷, 네가 걷는 방식, 네가 던지는 눈빛 — 모든 게 메시지다. 요즘 강서구 클럽 거리를 보면 실망스럽다. 왜? 다들 똑같은 옷을 입고, 똑같은 포즈를 취하고, 똑같은 음악에 몸을 흔든다. 그게 진짜야? 아니, 그건 복제품일 뿐이다.</p>
+
+                <p>우리는 <strong>스트릿 브루탈리즘</strong>을 말한다. 콘크리트처럼 투박하고, 철근처럼 단단한 스타일. 강서 클럽 룩북의 핵심은 바로 이 원초적 에너지다. 화려한 조명 아래서 빛나는 가짜 실크 따윈 필요 없다. 니가 입어야 할 건 거친 데님, 헤진 가죽, 그리고 주머니에 손을 찔러 넣는 당당함이다.</p>
+
+                <blockquote>
+                    "클럽은 무대다. 니가 주인공이 되든, 관객이 되든 선택은 니 몫이다. 하지만 기억해 — 관객은 박수만 친다."
+                </blockquote>
+
+                <p>강서 클럽 씬은 변하고 있다. 오래된 규칙은 깨졌다. 더 이상 '클럽 패션'이라는 이름 아래 숨을 필요 없다. 진짜는 거리에서 나온다. 우리가 하는 건 그걸 클럽 안으로 끌고 들어오는 것뿐이다. 강서 클럽 룩북은 그 선언문이다.</p>
+
+                <div class="highlight">
+                    <p style="margin: 0; font-weight: bold;">🔴 핵심 규칙:</p>
+                    <ul style="list-style: none; margin-top: 0.5rem;">
+                        <li>✓ 레이어드 — 하지만 과하지 않게</li>
+                        <li>✓ 블랙 & 화이트 — 컬러는 액세서리로만</li>
+                        <li>✓ 신발은 더러울수록 좋다</li>
+                        <li>✓ 포켓은 많을수록 좋다</li>
+                    </ul>
+                </div>
+
+                <p>니가 강서 클럽 룩북을 입는다는 건, 시스템에 반항한다는 뜻이다. '예쁘게' 입으라는 사회의 압박에 침을 뱉는 거다. 우리는 거친 게 아름답다고 믿는다. 완벽하지 않은 게 진짜라고 믿는다. 그래서 강서 클럽 룩북은 절대 유행을 쫓지 않는다. 유행은 사라지지만, 스트릿 브루탈리즘은 영원하다.</p>
+
+                <p>자, 이제 니 차례다. 거리로 나가라. 클럽으로 가라. 그리고 보여줘라. 진짜 강서 클럽 룩북이 뭔지. 우리는 이미 알고 있다 — 니가 입는 모든 게 선언문이라는 걸.</p>
+
+                <p style="margin-top: 2rem; color: #ff3300; font-size: 1.3rem;">T3B07 — 거리의 법칙은 변하지 않는다.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 강서 클럽 룩북 | T3B07 | 스트릿 브루탈리즘의 선봉</p>
+            <p style="margin-top: 0.5rem;">서울 강서구 | 클럽 문화의 경계를 넘다</p>
+        </div>
+    </footer>
+</body>
+</html>
